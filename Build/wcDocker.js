@@ -31086,7 +31086,7 @@ define('wcDocker/ThemeBuilder',[
     return Module;
 });
 require.config({
-    baseUrl: "./bower_components",
+    baseUrl: "./node_modules",
     shim: {
         // Libraries
         lodash: {
@@ -31096,7 +31096,7 @@ require.config({
     packages: [
         {
             name: 'dcl',
-            location: './dcl'   //points to bower_components/dcl
+            location: './dcl'   //points to node_modules/dcl
         },
         {
             name: 'wcDocker',
@@ -31104,7 +31104,7 @@ require.config({
         },
         {
             name: 'lodash',
-            location: './lodash-compat'   //points to bower_components/dcl
+            location: './lodash-compat'   //points to node_modules/dcl
         }
     ]
 });

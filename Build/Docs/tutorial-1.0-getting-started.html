@@ -105,18 +105,18 @@
 <hr>
 <h3>Installation</h3><p>You can use <a href="http://bower.io/">bower</a> for easy installation using the <a href="https://www.npmjs.com/">Node Package Manager</a></p>
 <pre class="prettyprint source"><code>{@lang bash}npm install -g bower
-bower install wcDocker</code></pre><p>Once installed, all of the source files will now be located in the <code>bower_components</code> folder and ready to link into your project.  </p>
+bower install wcDocker</code></pre><p>Once installed, all of the source files will now be located in the <code>node_modules</code> folder and ready to link into your project.  </p>
 <p>You can also download the <a href="https://github.com/WebCabin/wcDocker">source</a> and link them directly.</p>
 <hr>
-<h3>Basic Implementation</h3><pre class="prettyprint source"><code>{@lang xml}&lt;link rel='stylesheet' type='text/css' href='bower_components/jQuery-contextMenu/src/jquery.contextMenu.css'/>
-&lt;link rel='stylesheet' type='text/css' href='bower_components/font-awesome/css/font-awesome.css'/>
+<h3>Basic Implementation</h3><pre class="prettyprint source"><code>{@lang xml}&lt;link rel='stylesheet' type='text/css' href='node_modules/jQuery-contextMenu/src/jquery.contextMenu.css'/>
+&lt;link rel='stylesheet' type='text/css' href='node_modules/font-awesome/css/font-awesome.css'/>
 
-&lt;script src='bower_components/jquery/dist/jquery.min.js'>&lt;/script>
-&lt;script src='bower_components/jQuery-contextMenu/src/jquery.contextMenu.js'>&lt;/script>
-&lt;script src='bower_components/jQuery-contextMenu/src/jquery.ui.position.js'>&lt;/script></code></pre><p>Also include the wcDocker library files as well...</p>
-<pre class="prettyprint source"><code>{@lang xml}&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bower_components/wcDocker/Build/wcDocker.min.css&quot;/>
+&lt;script src='node_modules/jquery/dist/jquery.min.js'>&lt;/script>
+&lt;script src='node_modules/jQuery-contextMenu/src/jquery.contextMenu.js'>&lt;/script>
+&lt;script src='node_modules/jQuery-contextMenu/src/jquery.ui.position.js'>&lt;/script></code></pre><p>Also include the wcDocker library files as well...</p>
+<pre class="prettyprint source"><code>{@lang xml}&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;node_modules/wcDocker/Build/wcDocker.min.css&quot;/>
 
-&lt;script src=&quot;bower_components/wcDocker/Build/wcDocker.min.js&quot;>&lt;/script></code></pre><p><br></p>
+&lt;script src=&quot;node_modules/wcDocker/Build/wcDocker.min.js&quot;>&lt;/script></code></pre><p><br></p>
 <p>Once the dependencies have been included, start by creating an instance of the main <a href="module-wcDocker.html">docker</a> and assign it a <a href="external-domNode.html">DOM container</a> (this should be done after the document has finished loading). Typically this would be the document body element, but there is no restriction if you want to use a smaller area instead. Multiple <a href="module-wcDocker.html">dockers</a> can be used, however, that feature is not currently supported and may not work properly.</p>
 <pre class="prettyprint source"><code>$(document).ready(function() {
   var myDocker = new wcDocker(document.body, {

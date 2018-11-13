@@ -10,8 +10,11 @@
   "dependencies": {
     "FileSaver": "^0.10.0",
     "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.2",
+    "iron": "^5.0.6",
     "jquery": "^3.3.1",
-    "jquery-contextmenu": "^2.6.4"
+    "jquery-contextmenu": "^2.6.4",
+    "yarn": "^1.12.3"
   },
   "devDependencies": {
     "almond": "0.3.2",
@@ -19,6 +22,30 @@
     "dojo": "1.11.2",
     "lodash-amd": "4.15.0",
     "requirejs": "2.2.0",
-    "requirejs-domready": "2.0.3"
-  }
+    "requirejs-domready": "2.0.3",
+    "lodash-compat": "3.10.2"
+  },
+  "ignore": [
+    "/.*",
+    "favicon.ico",
+    "index_bower.html",
+    "indexDev_bower.html",
+    "index_node.html",
+    "indexDev_node.html",
+    "Code",
+    "Compiler",
+    "images",
+    "Themes",
+    "package.json"
+  ],
+  "keywords": [
+    "css",
+    "js",
+    "front-end",
+    "framework",
+    "web",
+    "dynamic"
+  ],
+  "license": "MIT"
+
 }

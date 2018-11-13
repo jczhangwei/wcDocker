@@ -24,7 +24,7 @@ define({
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
 	maxConcurrency: 2,
 
-	basePath: '../bower_components',
+	basePath: '../node_modules',
 
 	// Configuration options for the module loader;
 	// any AMD configuration options supported by the Dojo loader can be used here
@@ -39,7 +39,7 @@ define({
 			{ name: 'dcl', location: 'dcl' },
 			{
 				name: 'lodash',
-				location: 'lodash-compat'   //points to bower_components/dcl
+				location: 'lodash-compat'   //points to node_modules/dcl
 			}
 		]
 	},

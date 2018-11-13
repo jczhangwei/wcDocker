@@ -83,7 +83,7 @@ Remarks, please run bower install after checkout!
 
     
         <!-- include Require-JS --->
-        <script src="bower_components/requirejs/require.js"></script>
+        <script src="node_modules/requirejs/require.js"></script>
     
 
 2. Configure Require.JS
@@ -91,11 +91,11 @@ Remarks, please run bower install after checkout!
     
         <script type="text/javascript">    
             require.config({
-                baseUrl: "./bower_components",
+                baseUrl: "./node_modules",
                 packages: [
                     {
                         name: 'dcl',
-                        location: './dcl'   //points to bower_components/dcl
+                        location: './dcl'   //points to node_modules/dcl
                     },
                     {
                         name: 'wcDocker',
