@@ -95,7 +95,7 @@
 }
 
 .wcPanelTab {
-  font-family: sans-serif;
+  font-family:  Tahoma, Verdana, STHeiTi, simsun, sans-serif, "Microsoft YaHei UI";
   color: #999;
   border-radius: 0px;
   background-color: #111;
@@ -112,7 +112,7 @@
 }
 
 .wcPanelTabActive {
-  font-family: sans-serif;
+  font-family:  Tahoma, Verdana, STHeiTi, simsun, sans-serif, "Microsoft YaHei UI";
   color: #DDD;
   background-color: #444;
   margin-top: 1px;
